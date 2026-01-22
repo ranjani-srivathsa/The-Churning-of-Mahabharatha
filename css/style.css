@@ -74,3 +74,41 @@ em {
   border-left: 5px solid #b38b4d;
   font-style: italic;
 }
+/* Question block */
+.question {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #4a2c12;
+}
+
+.question span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Narrative beginning */
+.narrative-start {
+  margin-top: 45px;
+  font-size: 1.08rem;
+}
+
+/* Scene shift */
+.scene-shift {
+  margin-top: 35px;
+  font-style: italic;
+  color: #5a381c;
+}
+
+/* Final conclusion */
+.conclusion {
+  margin-top: 45px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  font-style: italic;
+  text-align: center;
+  color: #4a2c12;
+}

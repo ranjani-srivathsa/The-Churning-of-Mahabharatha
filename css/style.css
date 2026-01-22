@@ -1,13 +1,15 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
 
-  /* YOUR IMAGE */
-  background-image: url("../images/mahabharata-bg.jpg");
+  /* background image */
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("../images/mahabharata-bg.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,60 +18,39 @@ body {
   color: #2b2b2b;
 }
 
-/* dark overlay */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 0;
-}
-
-/* content container */
-.content-box {
-  position: relative;
-  z-index: 1;
+/* main content */
+.container {
   max-width: 900px;
   margin: 60px auto;
-  padding: 45px 40px;
-
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 18px;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.4);
+  padding: 30px 40px;
 }
 
 /* title */
-.title {
+h1 {
   text-align: center;
-  margin-bottom: 35px;
+  font-size: 2.5rem;
   letter-spacing: 1.5px;
-  font-size: 2.6rem;
   color: #6b3f1d;
+  margin-bottom: 35px;
 }
 
-/* text */
-.text-content p {
-  margin-bottom: 18px;
+/* paragraphs */
+p {
   font-size: 1.05rem;
   line-height: 1.75;
+  margin-bottom: 18px;
 }
 
-.text-content strong {
+/* emphasis */
+strong {
   color: #7a461d;
 }
 
-.text-content em {
-  color: #5b381c;
+em {
+  color: #5a381c;
 }
 
-/* highlight block */
-.highlight {
-  padding: 18px;
-  background: #f4ede4;
-  border-left: 5px solid #b38b4d;
-  font-style: italic;
-}
-
-/* menu + CTA */
+/* menu */
 .menu {
   text-align: center;
   margin-bottom: 30px;
@@ -86,34 +67,10 @@ body {
   text-decoration: underline;
 }
 
-/* button */
-.cta {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.cta a {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 14px 28px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #8a5a2b, #caa14a);
-  color: white;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
-
-.cta a:hover {
-  transform: translateY(-2px);
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .content-box {
-    margin: 30px 15px;
-    padding: 30px 25px;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
+/* highlight paragraph */
+.highlight {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.45);
+  border-left: 5px solid #b38b4d;
+  font-style: italic;
 }

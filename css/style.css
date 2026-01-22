@@ -5,21 +5,26 @@
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background: url('../images/Mahabharata-bg.jpg')
-              no-repeat center center fixed;
+
+  /* YOUR IMAGE */
+  background-image: url("../images/Mahabharata-bg.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: #2b2b2b;
 }
 
-/* soft dark layer so text is readable */
+/* dark overlay */
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 0;
 }
 
-/* main white content */
+/* content container */
 .content-box {
   position: relative;
   z-index: 1;
@@ -29,7 +34,7 @@ body {
 
   background: rgba(255, 255, 255, 0.9);
   border-radius: 18px;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.4);
 }
 
 /* title */
@@ -41,7 +46,7 @@ body {
   color: #6b3f1d;
 }
 
-/* text styling */
+/* text */
 .text-content p {
   margin-bottom: 18px;
   font-size: 1.05rem;
@@ -56,7 +61,7 @@ body {
   color: #5b381c;
 }
 
-/* highlight paragraph */
+/* highlight block */
 .highlight {
   padding: 18px;
   background: #f4ede4;
@@ -64,7 +69,24 @@ body {
   font-style: italic;
 }
 
-/* call to action */
+/* menu + CTA */
+.menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6b3f1d;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* button */
 .cta {
   text-align: center;
   margin-top: 40px;
@@ -77,13 +99,11 @@ body {
   border-radius: 30px;
   background: linear-gradient(135deg, #8a5a2b, #caa14a);
   color: white;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
 .cta a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.45);
 }
 
 /* mobile */

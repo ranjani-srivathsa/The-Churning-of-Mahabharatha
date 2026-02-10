@@ -46,7 +46,7 @@ body {
 /* MENU */
 .menu {
   text-align: center;
-  margin: clamp(12px, 3vw, 20px) 0 clamp(20px, 4vw, 40px);
+  margin: clamp(8px, 2vw, 12px) 0 clamp(10px, 2vw, 18px);
 }
 
 .menu a {

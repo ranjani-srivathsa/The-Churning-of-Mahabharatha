@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: #f3eadb;   /* parchment base */
+  color: #3a2412;
+}
+
+/* HERO */
+.library-hero {
+  text-align: center;
+  padding: clamp(30px, 6vw, 60px) 20px;
+  background: linear-gradient(
+    rgba(243,234,219,0.95),
+    rgba(243,234,219,0.85)
+  );
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.library-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 2px;
+  color: #5a3415;
+  margin-bottom: 10px;
+}
+
+.library-hero .subtitle {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-style: italic;
+  color: #6b4a2a;
+}
+
+/* GRID */
+.library {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(20px, 5vw, 50px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(20px, 4vw, 35px);
+}
+
+/* STORY CARD */
+.story-card {
+  display: block;
+  text-decoration: none;
+  background: #fbf5ea;
+  border-radius: 14px;
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(0,0,0,0.05);
+
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* subtle manuscript border feel */
+.story-card::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px dashed rgba(90,52,21,0.15);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.18),
+    inset 0 0 0 1px rgba(0,0,0,0.06);
+}
+
+.story-card h3 {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  color: #5a3415;
+  margin-bottom: 10px;
+}
+
+.story-card p {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #4a2c12;
+}
+
+.read-link {
+  font-weight: bold;
+  color: #8a5a2b;
+  letter-spacing: 0.5px;
+}
+
+/* MOBILE POLISH */
+@media (max-width: 600px) {
+  .story-card {
+    padding: 18px;
+  }
+}

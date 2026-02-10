@@ -3,7 +3,7 @@ body {
   font-family: 'Merriweather', serif;
 
   background:
-    url("../images/parchment-texture.jpg"),
+    url("../images/parchment-texture.png"),
     radial-gradient(circle at top, #fbf4e6, #e8d7b6);
 
   background-size: 600px 600px, cover;

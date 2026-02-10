@@ -134,6 +134,14 @@ em { color: #5a381c; }
   margin-top: clamp(20px, 5vw, 40px);
 }
 
+/* Library Grid */
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(16px, 4vw, 30px);
+  margin-top: clamp(20px, 5vw, 40px);
+}
+
 /* Story Card */
 .story-card {
   background: rgba(255, 255, 255, 0.6);
@@ -166,3 +174,4 @@ em { color: #5a381c; }
   font-weight: bold;
   color: #8a5a2b;
 }
+

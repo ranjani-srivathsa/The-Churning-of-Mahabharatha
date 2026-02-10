@@ -36,12 +36,9 @@ body::after {
   border-bottom: 1px solid rgba(90,52,21,0.2);
   position: relative;
 }
-
-.library-hero h1 {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  letter-spacing: 2px;
-  color: #5a3415;
-  margin-bottom: 14px;
+.library-hero h1,
+.story-card h3 {
+  font-family: 'Cinzel', serif;
 }
 
 .library-hero .subtitle {

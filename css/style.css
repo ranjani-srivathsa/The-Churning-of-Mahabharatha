@@ -55,13 +55,17 @@ body {
 
 /* TEXT CONTENT */
 .textcontent {
-  max-width: 65ch;
+  max-width: 70ch;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.12);
   padding: clamp(14px, 4vw, 24px);
   border-radius: 12px;
 }
-
+@media (min-width: 1200px) {
+  .textcontent {
+    max-width: 75ch;
+  }
+}
 .textcontent p {
   font-size: clamp(0.95rem, 1.2vw, 1.1rem);
   line-height: 1.8;

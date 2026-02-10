@@ -3,10 +3,7 @@ body {
   font-family: 'Merriweather', serif;
 
   background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.85)
-    ),
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85)),
     url("../images/mahabharata-bg.jpg");
 
   background-size: cover;
@@ -18,37 +15,18 @@ body {
   line-height: 1.7;
 }
 
-/* HERO */
-.hero {
-  min-height: auto;
-  padding: clamp(16px, 4vw, 32px) 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(1.6rem, 4vw, 3rem);
-  letter-spacing: clamp(1px, 0.3vw, 2px);
-  color: #5a3415;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
-  padding: 0 10px;
-  margin: 0;
-}
-
-/* CONTENT */
+/* MAIN CONTAINER */
 .container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: clamp(8px, 2vw, 20px) clamp(14px, 5vw, 40px) clamp(30px, 5vw, 60px);
+  padding: clamp(10px, 3vw, 24px) clamp(16px, 6vw, 48px) clamp(30px, 6vw, 70px);
 }
 
 /* MENU */
 .menu {
   text-align: center;
-  margin: clamp(8px, 2vw, 12px) 0 clamp(10px, 2vw, 18px);
+  margin-bottom: clamp(10px, 3vw, 18px);
 }
 
 .menu a {
@@ -59,10 +37,27 @@ body {
   font-size: clamp(0.85rem, 1.2vw, 1rem);
 }
 
-/* TEXT */
+/* HERO */
+.hero {
+  padding: clamp(12px, 4vw, 28px) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  letter-spacing: clamp(1px, 0.3vw, 2px);
+  color: #5a3415;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  margin: 0;
+}
+
+/* TEXT CONTENT */
 .textcontent {
-  max-width: 65ch;   /* perfect reading width */
+  max-width: 65ch;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.12);
+  padding: clamp(14px, 4vw, 24px);
+  border-radius: 12px;
 }
 
 .textcontent p {
@@ -74,11 +69,38 @@ body {
 strong { color: #7a461d; }
 em { color: #5a381c; }
 
+/* QUESTION */
+.question {
+  margin: clamp(25px, 6vw, 40px) 0;
+  text-align: center;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-style: italic;
+  color: #4a2c12;
+}
+
+.question span {
+  display: block;
+  margin-top: clamp(6px, 2vw, 10px);
+  font-weight: bold;
+}
+
+/* NARRATIVE */
+.narrative-start {
+  margin-top: clamp(25px, 6vw, 45px);
+}
+
+.scene-shift {
+  margin-top: clamp(20px, 5vw, 35px);
+  font-style: italic;
+  color: #5a381c;
+}
+
 /* HIGHLIGHT */
 .highlight {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.4);
   padding: clamp(12px, 3vw, 18px);
   border-left: 5px solid #b38b4d;
+  border-radius: 6px;
   font-style: italic;
 }
 
@@ -97,43 +119,3 @@ em { color: #5a381c; }
   font-weight: bold;
   font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
-
-/* Question block */
-.question {
-  margin: clamp(25px, 6vw, 40px) 0;
-  text-align: center;
-  font-size: clamp(1rem, 1.4vw, 1.15rem);
-  font-style: italic;
-  color: #4a2c12;
-}
-
-.question span {
-  display: block;
-  margin-top: clamp(6px, 2vw, 10px);
-  font-weight: bold;
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
-}
-
-/* Narrative beginning */
-.narrative-start {
-  margin-top: clamp(25px, 6vw, 45px);
-  font-size: inherit;
-}
-
-/* Scene shift */
-.scene-shift {
-  margin-top: clamp(20px, 5vw, 35px);
-  font-style: italic;
-  color: #5a381c;
-}
-
-/* Final conclusion */
-.conclusion {
-  margin-top: clamp(25px, 6vw, 45px);
-  padding-top: clamp(12px, 3vw, 20px);
-  border-top: 1px solid rgba(0,0,0,0.2);
-  font-style: italic;
-  text-align: center;
-  color: #4a2c12;
-}
-

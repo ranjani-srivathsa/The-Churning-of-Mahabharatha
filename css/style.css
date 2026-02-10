@@ -97,7 +97,7 @@ em { color: #5a381c; }
 
 /* HIGHLIGHT */
 .highlight {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.55);
   padding: clamp(12px, 3vw, 18px);
   border-left: 5px solid #b38b4d;
   border-radius: 6px;
